@@ -2,7 +2,7 @@ import urllib.request
 import ssl
 import random
  
-imeilist={"bc1a4f7ea85044db891bdde5ff970563","db6aa97501104012b057aa1742e435db"}
+imeilist={""}#请在此处输入imeicode
 ssl._create_default_https_context = ssl._create_unverified_context
 for i in imeilist:
     res=urllib.request.urlopen("https://client4.aipao.me/api/token/QM_Users/LoginSchool?IMEICode="+i)
